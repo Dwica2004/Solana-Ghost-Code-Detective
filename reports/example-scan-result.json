@@ -1,0 +1,305 @@
+{
+    "programId": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+    "scanTimestamp": 1706886000000,
+    "currentSlot": 250000000,
+    "rpcEndpoint": "https://api.mainnet-beta.solana.com",
+    "summary": {
+        "totalAccounts": 42,
+        "activeAccounts": 28,
+        "dormantAccounts": 14,
+        "highRiskAccounts": 7,
+        "totalRecoverableSOL": 2.3458
+    },
+    "accounts": [
+        {
+            "pubkey": "7YttLkHDoNj9wyDur5pM1ejNaAvT9X4eqaYcHQqtj2G5",
+            "riskLevel": "Critical",
+            "confidenceScore": 95,
+            "indicators": [
+                {
+                    "type": "inactivity",
+                    "reason": "No write activity for 750,000 slots (~347 days)",
+                    "weight": 30
+                },
+                {
+                    "type": "orphaned_pda",
+                    "reason": "PDA detected but derivation path unknown - potentially orphaned",
+                    "weight": 25
+                },
+                {
+                    "type": "rent_recoverable",
+                    "reason": "0.4521 SOL potentially recoverable",
+                    "weight": 40
+                }
+            ],
+            "estimatedRecoverableSOL": 0.4521
+        },
+        {
+            "pubkey": "9xQeWvG816bUx9EPjHmaT23yvVM2ZWbrrpZb9PusVFin",
+            "riskLevel": "High",
+            "confidenceScore": 82,
+            "indicators": [
+                {
+                    "type": "inactivity",
+                    "reason": "No write activity for 620,000 slots (~286 days)",
+                    "weight": 30
+                },
+                {
+                    "type": "rent_recoverable",
+                    "reason": "0.3124 SOL potentially recoverable",
+                    "weight": 52
+                }
+            ],
+            "estimatedRecoverableSOL": 0.3124
+        },
+        {
+            "pubkey": "FnAPJkzf3F3hCJzq9KwZa57g8SEkLiAg3rk3qQ9ePuVP",
+            "riskLevel": "High",
+            "confidenceScore": 78,
+            "indicators": [
+                {
+                    "type": "inactivity",
+                    "reason": "No write activity for 580,000 slots (~268 days)",
+                    "weight": 30
+                },
+                {
+                    "type": "orphaned_pda",
+                    "reason": "PDA detected but derivation path unknown - potentially orphaned",
+                    "weight": 25
+                },
+                {
+                    "type": "rent_recoverable",
+                    "reason": "0.2891 SOL potentially recoverable",
+                    "weight": 23
+                }
+            ],
+            "estimatedRecoverableSOL": 0.2891
+        },
+        {
+            "pubkey": "H6ARHf6YXhGYeQfUzQNGk6rDNnLBQKrenN7GQrF5c5V",
+            "riskLevel": "High",
+            "confidenceScore": 75,
+            "indicators": [
+                {
+                    "type": "inactivity",
+                    "reason": "No write activity for 550,000 slots (~254 days)",
+                    "weight": 30
+                },
+                {
+                    "type": "rent_recoverable",
+                    "reason": "0.2156 SOL potentially recoverable",
+                    "weight": 45
+                }
+            ],
+            "estimatedRecoverableSOL": 0.2156
+        },
+        {
+            "pubkey": "3TD6SWY9M1mLY2kZWJNavPLhwXvcRsWdnZLnL5QUkjpv",
+            "riskLevel": "Medium",
+            "confidenceScore": 58,
+            "indicators": [
+                {
+                    "type": "inactivity",
+                    "reason": "No write activity for 420,000 slots (~194 days)",
+                    "weight": 30
+                },
+                {
+                    "type": "rent_recoverable",
+                    "reason": "0.1243 SOL potentially recoverable",
+                    "weight": 28
+                }
+            ],
+            "estimatedRecoverableSOL": 0.1243
+        },
+        {
+            "pubkey": "DCA265Vj8a9CEuX1eb1LWRnDT7uK6q1xMipnNyatn23M",
+            "riskLevel": "Low",
+            "confidenceScore": 22,
+            "indicators": [
+                {
+                    "type": "rent_recoverable",
+                    "reason": "0.0089 SOL potentially recoverable",
+                    "weight": 22
+                }
+            ],
+            "estimatedRecoverableSOL": 0.0089
+        }
+    ],
+    "graph": {
+        "nodes": [
+            {
+                "id": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+                "pubkey": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+                "type": "program",
+                "metadata": {
+                    "lamports": 0,
+                    "owner": "BPFLoaderUpgradeab1e11111111111111111111111",
+                    "isPDA": false
+                }
+            },
+            {
+                "id": "7YttLkHDoNj9wyDur5pM1ejNaAvT9X4eqaYcHQqtj2G5",
+                "pubkey": "7YttLkHDoNj9wyDur5pM1ejNaAvT9X4eqaYcHQqtj2G5",
+                "type": "pda",
+                "riskProfile": {
+                    "riskLevel": "Critical",
+                    "confidenceScore": 95,
+                    "estimatedRecoverableSOL": 0.4521
+                },
+                "metadata": {
+                    "lamports": 452100000,
+                    "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+                    "lastActivity": 249250000,
+                    "isPDA": true
+                }
+            },
+            {
+                "id": "9xQeWvG816bUx9EPjHmaT23yvVM2ZWbrrpZb9PusVFin",
+                "pubkey": "9xQeWvG816bUx9EPjHmaT23yvVM2ZWbrrpZb9PusVFin",
+                "type": "account",
+                "riskProfile": {
+                    "riskLevel": "High",
+                    "confidenceScore": 82,
+                    "estimatedRecoverableSOL": 0.3124
+                },
+                "metadata": {
+                    "lamports": 312400000,
+                    "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+                    "lastActivity": 249380000,
+                    "isPDA": false
+                }
+            },
+            {
+                "id": "FnAPJkzf3F3hCJzq9KwZa57g8SEkLiAg3rk3qQ9ePuVP",
+                "pubkey": "FnAPJkzf3F3hCJzq9KwZa57g8SEkLiAg3rk3qQ9ePuVP",
+                "type": "pda",
+                "riskProfile": {
+                    "riskLevel": "High",
+                    "confidenceScore": 78,
+                    "estimatedRecoverableSOL": 0.2891
+                },
+                "metadata": {
+                    "lamports": 289100000,
+                    "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+                    "lastActivity": 249420000,
+                    "isPDA": true
+                }
+            },
+            {
+                "id": "H6ARHf6YXhGYeQfUzQNGk6rDNnLBQKrenN7GQrF5c5V",
+                "pubkey": "H6ARHf6YXhGYeQfUzQNGk6rDNnLBQKrenN7GQrF5c5V",
+                "type": "account",
+                "riskProfile": {
+                    "riskLevel": "High",
+                    "confidenceScore": 75,
+                    "estimatedRecoverableSOL": 0.2156
+                },
+                "metadata": {
+                    "lamports": 215600000,
+                    "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+                    "lastActivity": 249450000,
+                    "isPDA": false
+                }
+            },
+            {
+                "id": "3TD6SWY9M1mLY2kZWJNavPLhwXvcRsWdnZLnL5QUkjpv",
+                "pubkey": "3TD6SWY9M1mLY2kZWJNavPLhwXvcRsWdnZLnL5QUkjpv",
+                "type": "account",
+                "riskProfile": {
+                    "riskLevel": "Medium",
+                    "confidenceScore": 58,
+                    "estimatedRecoverableSOL": 0.1243
+                },
+                "metadata": {
+                    "lamports": 124300000,
+                    "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+                    "lastActivity": 249580000,
+                    "isPDA": false
+                }
+            },
+            {
+                "id": "DCA265Vj8a9CEuX1eb1LWRnDT7uK6q1xMipnNyatn23M",
+                "pubkey": "DCA265Vj8a9CEuX1eb1LWRnDT7uK6q1xMipnNyatn23M",
+                "type": "account",
+                "riskProfile": {
+                    "riskLevel": "Low",
+                    "confidenceScore": 22,
+                    "estimatedRecoverableSOL": 0.0089
+                },
+                "metadata": {
+                    "lamports": 8900000,
+                    "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+                    "lastActivity": 249980000,
+                    "isPDA": false
+                }
+            }
+        ],
+        "edges": [
+            {
+                "source": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+                "target": "7YttLkHDoNj9wyDur5pM1ejNaAvT9X4eqaYcHQqtj2G5",
+                "relationship": "owns",
+                "isActive": true
+            },
+            {
+                "source": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+                "target": "7YttLkHDoNj9wyDur5pM1ejNaAvT9X4eqaYcHQqtj2G5",
+                "relationship": "derived_from",
+                "isActive": true
+            },
+            {
+                "source": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+                "target": "9xQeWvG816bUx9EPjHmaT23yvVM2ZWbrrpZb9PusVFin",
+                "relationship": "owns",
+                "isActive": true
+            },
+            {
+                "source": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+                "target": "FnAPJkzf3F3hCJzq9KwZa57g8SEkLiAg3rk3qQ9ePuVP",
+                "relationship": "owns",
+                "isActive": true
+            },
+            {
+                "source": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+                "target": "FnAPJkzf3F3hCJzq9KwZa57g8SEkLiAg3rk3qQ9ePuVP",
+                "relationship": "derived_from",
+                "isActive": true
+            },
+            {
+                "source": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+                "target": "H6ARHf6YXhGYeQfUzQNGk6rDNnLBQKrenN7GQrF5c5V",
+                "relationship": "owns",
+                "isActive": true
+            },
+            {
+                "source": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+                "target": "3TD6SWY9M1mLY2kZWJNavPLhwXvcRsWdnZLnL5QUkjpv",
+                "relationship": "owns",
+                "isActive": true
+            },
+            {
+                "source": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+                "target": "DCA265Vj8a9CEuX1eb1LWRnDT7uK6q1xMipnNyatn23M",
+                "relationship": "owns",
+                "isActive": true
+            }
+        ],
+        "programId": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+        "scanTimestamp": 1706886000000,
+        "currentSlot": 250000000
+    },
+    "authorities": [
+        {
+            "account": "7YttLkHDoNj9wyDur5pM1ejNaAvT9X4eqaYcHQqtj2G5",
+            "authority": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+            "privilege": "owner",
+            "isActive": true
+        },
+        {
+            "account": "9xQeWvG816bUx9EPjHmaT23yvVM2ZWbrrpZb9PusVFin",
+            "authority": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+            "privilege": "owner",
+            "isActive": true
+        }
+    ]
+}

@@ -1,0 +1,174 @@
+{
+    "programId": "DemoProgram1111111111111111111111111111111",
+    "scanTimestamp": 1738461600000,
+    "currentSlot": 250000000,
+    "rpcEndpoint": "https://api.devnet.solana.com",
+    "summary": {
+        "totalAccounts": 10,
+        "activeAccounts": 6,
+        "dormantAccounts": 4,
+        "highRiskAccounts": 2,
+        "totalRecoverableSOL": 1.5
+    },
+    "accounts": [
+        {
+            "pubkey": "Ghost1AccountAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+            "riskLevel": "Critical",
+            "confidenceScore": 98,
+            "indicators": [
+                {
+                    "type": "inactivity",
+                    "reason": "No activity for 800,000 slots (~370 days)",
+                    "weight": 30
+                },
+                {
+                    "type": "orphaned_pda",
+                    "reason": "PDA with unknown derivation - likely orphaned",
+                    "weight": 25
+                },
+                {
+                    "type": "rent_recoverable",
+                    "reason": "0.8 SOL recoverable",
+                    "weight": 43
+                }
+            ],
+            "estimatedRecoverableSOL": 0.8
+        },
+        {
+            "pubkey": "Ghost2AccountBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+            "riskLevel": "High",
+            "confidenceScore": 75,
+            "indicators": [
+                {
+                    "type": "inactivity",
+                    "reason": "No activity for 600,000 slots (~277 days)",
+                    "weight": 30
+                },
+                {
+                    "type": "rent_recoverable",
+                    "reason": "0.7 SOL recoverable",
+                    "weight": 45
+                }
+            ],
+            "estimatedRecoverableSOL": 0.7
+        },
+        {
+            "pubkey": "NormalAccountCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC",
+            "riskLevel": "Low",
+            "confidenceScore": 15,
+            "indicators": [
+                {
+                    "type": "rent_recoverable",
+                    "reason": "0.001 SOL recoverable",
+                    "weight": 15
+                }
+            ],
+            "estimatedRecoverableSOL": 0.001
+        }
+    ],
+    "graph": {
+        "nodes": [
+            {
+                "id": "DemoProgram1111111111111111111111111111111",
+                "pubkey": "DemoProgram1111111111111111111111111111111",
+                "type": "program",
+                "metadata": {
+                    "lamports": 0,
+                    "owner": "BPFLoaderUpgradeab1e11111111111111111111111",
+                    "isPDA": false
+                }
+            },
+            {
+                "id": "Ghost1AccountAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "pubkey": "Ghost1AccountAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "type": "pda",
+                "riskProfile": {
+                    "riskLevel": "Critical",
+                    "confidenceScore": 98,
+                    "estimatedRecoverableSOL": 0.8
+                },
+                "metadata": {
+                    "lamports": 800000000,
+                    "owner": "DemoProgram1111111111111111111111111111111",
+                    "lastActivity": 249200000,
+                    "isPDA": true
+                }
+            },
+            {
+                "id": "Ghost2AccountBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+                "pubkey": "Ghost2AccountBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+                "type": "account",
+                "riskProfile": {
+                    "riskLevel": "High",
+                    "confidenceScore": 75,
+                    "estimatedRecoverableSOL": 0.7
+                },
+                "metadata": {
+                    "lamports": 700000000,
+                    "owner": "DemoProgram1111111111111111111111111111111",
+                    "lastActivity": 249400000,
+                    "isPDA": false
+                }
+            },
+            {
+                "id": "NormalAccountCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC",
+                "pubkey": "NormalAccountCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC",
+                "type": "account",
+                "riskProfile": {
+                    "riskLevel": "Low",
+                    "confidenceScore": 15,
+                    "estimatedRecoverableSOL": 0.001
+                },
+                "metadata": {
+                    "lamports": 1000000,
+                    "owner": "DemoProgram1111111111111111111111111111111",
+                    "lastActivity": 249950000,
+                    "isPDA": false
+                }
+            }
+        ],
+        "edges": [
+            {
+                "source": "DemoProgram1111111111111111111111111111111",
+                "target": "Ghost1AccountAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "relationship": "owns",
+                "isActive": true
+            },
+            {
+                "source": "DemoProgram1111111111111111111111111111111",
+                "target": "Ghost1AccountAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "relationship": "derived_from",
+                "isActive": true
+            },
+            {
+                "source": "DemoProgram1111111111111111111111111111111",
+                "target": "Ghost2AccountBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+                "relationship": "owns",
+                "isActive": true
+            },
+            {
+                "source": "DemoProgram1111111111111111111111111111111",
+                "target": "NormalAccountCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC",
+                "relationship": "owns",
+                "isActive": true
+            }
+        ],
+        "programId": "DemoProgram1111111111111111111111111111111",
+        "scanTimestamp": 1738461600000,
+        "currentSlot": 250000000
+    },
+    "authorities": [
+        {
+            "account": "Ghost1AccountAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+            "authority": "DemoProgram1111111111111111111111111111111",
+            "privilege": "owner",
+            "isActive": true
+        },
+        {
+            "account": "Ghost2AccountBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+            "authority": "DemoProgram1111111111111111111111111111111",
+            "privilege": "owner",
+            "isActive": true
+        }
+    ]
+}

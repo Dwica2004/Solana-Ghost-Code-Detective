@@ -1,0 +1,40 @@
+{
+    "defaultRpcEndpoint": "https://api.mainnet-beta.solana.com",
+    "inactivityThreshold": {
+        "slots": 500000,
+        "description": "Accounts inactive for this many slots are flagged as dormant"
+    },
+    "riskScoring": {
+        "weights": {
+            "inactivity": 0.3,
+            "authorityMismatch": 0.25,
+            "orphanedPda": 0.25,
+            "rentRecoverable": 0.2
+        },
+        "thresholds": {
+            "low": 25,
+            "medium": 50,
+            "high": 75,
+            "critical": 90
+        }
+    },
+    "scanning": {
+        "maxAccountsPerBatch": 100,
+        "rpcTimeout": 30000,
+        "retryAttempts": 3,
+        "delayBetweenBatches": 1000
+    },
+    "visualization": {
+        "maxNodesInGraph": 1000,
+        "enableClustering": true,
+        "layout": "force-directed"
+    },
+    "reporting": {
+        "formats": [
+            "json",
+            "markdown"
+        ],
+        "includeRawData": true,
+        "minimumRiskLevel": "low"
+    }
+}

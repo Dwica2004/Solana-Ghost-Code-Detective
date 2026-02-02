@@ -1,0 +1,159 @@
+.graph-visualization {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-lg);
+}
+
+.graph-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--spacing-lg);
+    flex-wrap: wrap;
+    gap: var(--spacing-md);
+}
+
+.graph-title h3 {
+    margin-bottom: var(--spacing-xs);
+}
+
+.graph-subtitle {
+    color: var(--color-text-muted);
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+.graph-controls {
+    display: flex;
+    gap: var(--spacing-sm);
+}
+
+.graph-content {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 350px;
+    gap: var(--spacing-lg);
+    min-height: 600px;
+}
+
+.graph-container {
+    position: relative;
+    height: 600px;
+    background: var(--color-surface);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+}
+
+/* Node Inspector Panel */
+.node-inspector {
+    padding: var(--spacing-lg);
+    height: fit-content;
+    max-height: 600px;
+    overflow-y: auto;
+    position: sticky;
+    top: var(--spacing-lg);
+}
+
+.node-inspector h4 {
+    margin-bottom: var(--spacing-lg);
+    padding-bottom: var(--spacing-sm);
+    border-bottom: 1px solid var(--color-border);
+}
+
+.inspector-section {
+    margin-bottom: var(--spacing-md);
+}
+
+.inspector-label {
+    font-size: 0.8rem;
+    color: var(--color-text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: var(--spacing-xs);
+}
+
+.inspector-value {
+    color: var(--color-text-primary);
+    font-weight: 500;
+}
+
+.inspector-value code {
+    font-size: 0.85rem;
+    word-break: break-all;
+    display: block;
+    padding: var(--spacing-sm);
+    background: var(--color-surface);
+    border-radius: var(--radius-sm);
+}
+
+.node-inspector .btn {
+    width: 100%;
+    margin-top: var(--spacing-md);
+}
+
+/* Legend */
+.graph-legend {
+    padding: var(--spacing-lg);
+}
+
+.graph-legend h4 {
+    margin-bottom: var(--spacing-md);
+    font-size: 1rem;
+}
+
+.legend-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-md);
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    font-size: 0.9rem;
+}
+
+.legend-color {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 2px solid var(--color-border);
+}
+
+/* Vis.js Network Overrides */
+.graph-container canvas {
+    border-radius: var(--radius-lg);
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+    .graph-content {
+        grid-template-columns: 1fr;
+    }
+
+    .node-inspector {
+        position: static;
+        max-height: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .graph-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .graph-controls {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .graph-controls .btn {
+        width: 100%;
+    }
+
+    .graph-container {
+        height: 400px;
+    }
+}
