@@ -1,6 +1,0 @@
-{
-    "buildCommand": "cd web-ui && npm install && npm run build",
-    "outputDirectory": "web-ui/dist",
-    "installCommand": "echo 'Skipping root install'",
-    "framework": null
-}

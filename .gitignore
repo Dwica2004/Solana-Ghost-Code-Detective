@@ -12,6 +12,11 @@ build/
 .env.local
 .env.*.local
 
+# Vercel
+.vercel/
+.vercel
+*.vercel.app
+
 # IDE
 .vscode/
 .idea/
@@ -50,3 +55,8 @@ web-ui/dist/
 # Lock files (optional - include for reproducible builds)
 # package-lock.json
 # yarn.lock
+
+# Deployment guides (internal use only)
+VERCEL_DEPLOY.md
+.vercel
+.env*.local
