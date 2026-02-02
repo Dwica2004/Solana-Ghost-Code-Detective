@@ -7,6 +7,8 @@
 [![React](https://img.shields.io/badge/React-18-blue)](https://reactjs.org/)
 [![Solana](https://img.shields.io/badge/Solana-Web3.js-purple)](https://solana.com/)
 
+🌐 **Live Demo**: [https://solana-ghost-code-detective.vercel.app](https://solana-ghost-code-detective.vercel.app) (Coming soon)
+
 A production-ready security auditing tool that performs on-chain state forensics for Solana programs by detecting abandoned, orphaned, dormant, or authority-risk accounts that are invisible in traditional source-code audits.
 
 ![Security Terminal Dark Theme](https://img.shields.io/badge/Theme-Security_Terminal-black)

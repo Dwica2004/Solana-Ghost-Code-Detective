@@ -1,0 +1,13 @@
+{
+    "buildCommand": "cd web-ui && npm install && npm run build",
+    "outputDirectory": "web-ui/dist",
+    "devCommand": "cd web-ui && npm run dev",
+    "installCommand": "npm install && cd web-ui && npm install",
+    "framework": "vite",
+    "rewrites": [
+        {
+            "source": "/(.*)",
+            "destination": "/index.html"
+        }
+    ]
+}
